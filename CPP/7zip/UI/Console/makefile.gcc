@@ -170,6 +170,13 @@ C_OBJS = \
   $O/7zCrc.o \
   $O/7zCrcOpt.o \
 
+ZSTD_OBJS = \
+  $O/Xxh64.o \
+  $O/ZstdEncoder.o \
+  $O/ZstdDec.o \
+  $O/ZstdDecoder.o \
+  $O/ZstdRegister.o \
+  $O/ZstdZipRegister.o \
 
 OBJS = \
   $(C_OBJS) \
@@ -182,6 +189,7 @@ OBJS = \
   $(7ZIP_COMMON_OBJS) \
   $(UI_COMMON_OBJS) \
   $(CONSOLE_OBJS) \
-
+  $(ZSTD_OBJS) \
+  $O/libzstd.a
 
 include ../../7zip_gcc.mak
