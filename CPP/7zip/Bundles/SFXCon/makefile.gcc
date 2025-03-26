@@ -6,6 +6,7 @@ PROG = 7zCon.sfx
 
 include ../../LzmaDec_gcc.mak
 
+MY_LIBS= -static 
 
 LOCAL_FLAGS_ST =
 MT_OBJS = \
@@ -47,7 +48,7 @@ endif
 
 
 
-LOCAL_FLAGS_SYS =
+LOCAL_FLAGS_SYS = 
 
 ifdef IS_MINGW
 
